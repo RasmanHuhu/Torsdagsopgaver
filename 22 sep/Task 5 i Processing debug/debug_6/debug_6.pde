@@ -17,5 +17,6 @@ boolean isJobDone()
 
 float getRandomNumber(float min, float max) 
 {
+  //Random returnerer ALTID en float. Derfor skal ovenstående ints være floats
     return random(min, max);
 }
