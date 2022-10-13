@@ -12,8 +12,6 @@ import java.util.Scanner;
 public class Cafe {
 
     ArrayList<String> coffeeMenu;
-
-//Constructor til 6.g
     public Cafe() {
         coffeeMenu = new ArrayList<>();
     }
@@ -27,14 +25,16 @@ public class Cafe {
             File file = new File("coffees.txt");
             Scanner fileReader = new Scanner(file);
             //while loop til at loop over files og tilføje lines til coffeeArray'et i denne class
+            //Bruger while loop - fremfor et for loop - fordi at
         while (fileReader.hasNextLine()) {
+            //.add er den string som tilføjer til array'et
             coffeeMenu.add(fileReader.nextLine());
         }
         } catch (Exception e) {
             //Besked hvis den ikke kan finde filen
             System.out.println("file not found. Check path and filename");
         }
-        //Constructor til 6.g
+        /
 
         }
     }

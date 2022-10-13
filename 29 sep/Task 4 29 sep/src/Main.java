@@ -25,10 +25,22 @@ public class Main {
         int input = m.showMenu(); //kalder metoden for at få den til at køre
         doAction(input);
 
+        /*
 
+        //Tager den string jeg fik og laver den om til en int:
+
+        Menu menu = new Menu(actions);
+        String s = menu.showMenu();
+        int i = Integer.parseInt(s);
+        doaction(i);a
+
+        */
 
     }
     //4.h
+
+//Hvorfor laver man breaks i Switchcases? - Break bryder loopet og går videre til næsten
+
 
     public static void doAction(int action) {
         switch (action) {
@@ -36,7 +48,7 @@ public class Main {
                 System.out.println("Starting the game now");
                 break;
             case 2:
-                System.out.println("Fecthing previously saved game data");
+                System.out.println("Fetching previously saved game data");
                 break;
             case 3:
                 System.out.println("Game paused");
